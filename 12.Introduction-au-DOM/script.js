@@ -17,7 +17,10 @@
 
 */
 
-
+const title = document.querySelector("h1");
+console.log(typeof title);
+console.dir(title);
+title.textContent = "le text a été modifié"
 
 
 /* 
@@ -34,3 +37,5 @@
   Et des APIs pratiques comme History pour gérer l'historique.
 */
 
+// console.log(window)
+console.log(document.fullscreenElement)
