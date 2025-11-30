@@ -11,6 +11,23 @@
 
 const salaries = [1200,5000,4000,2500,3450,1800]
 
+function customerFilter(arr, callback){
+
+    const FiltredArray = [];
+
+    for(const value of arr){
+        if(callback(value)){
+            FiltredArray.push(value);
+        }
+    }
+    return FiltredArray;
+}
+
+console.log(customerFilter(salaries, value => value > 3000))
+console.log(customerFilter(salaries, value => value > 1500))
+console.log(customerFilter(salaries, value => value > 2000))
+console.log(customerFilter(salaries, value => value > 1000))
+console.log(customerFilter(salaries, value => value > 4000))
 
 const countries = [
     {
@@ -35,24 +52,25 @@ const countries = [
     },
 ]
 
+console.log(customerFilter(countries, country => country.gdp > 1500))
 
 // Exemple avec un composant d'ordre supérieur
 
-export default function Private() {
-    // On exécute useContext pour savoir si l'utilisateur est connecté.
-    const {currentUser} = useContext(UserContext)
+// export default function Private() {
+//     // On exécute useContext pour savoir si l'utilisateur est connecté.
+//     const {currentUser} = useContext(UserContext)
   
-    // Si il n'est pas connecté, on retourne à la page d'accueil.
-    // <Navigate />, in fine, est une fonction. 
-    if(!currentUser) {
-      return <Navigate to="/" />
-    }
+//     // Si il n'est pas connecté, on retourne à la page d'accueil.
+//     // <Navigate />, in fine, est une fonction. 
+//     if(!currentUser) {
+//       return <Navigate to="/" />
+//     }
   
-    // Sinon on les emmène vers une page privé.
-    // <Outlet />, in fine, est une fonction. 
-    return (
-      <div className="container">
-        <Outlet />
-      </div>
-    )
-  }
+//     // Sinon on les emmène vers une page privé.
+//     // <Outlet />, in fine, est une fonction. 
+//     return (
+//       <div className="container">
+//         <Outlet />
+//       </div>
+//     )
+//   }

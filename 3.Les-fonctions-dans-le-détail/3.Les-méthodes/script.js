@@ -8,3 +8,18 @@
 
 
 
+const athlete = {
+    jump: ()=>{
+        console.log("Jump");
+    },
+    swim: function (){
+        console.log("swin")
+    },
+    run(){
+        console.log("run");
+    }
+}
+
+athlete.jump();
+athlete.swim();
+athlete.run();
