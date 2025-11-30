@@ -9,6 +9,16 @@
     Écrivez cette fonction sous la forme d'une fonction fléchée puis commentez-là et écrivez-là sous la forme d'une fonction classique.  
 */
 
+function devideBy5(nbr){
+
+    return nbr / 5;
+}
+
+console.log(devideBy5(1997))
+
+const devideBy10 = nbr => nbr / 10
+
+console.log(devideBy10(1000))
 
 
 /* 
@@ -22,9 +32,14 @@
 const weather = {
   city: "London",
   temp: 16,
+  getFahrenheit(temp){
+  return (this.temp* 1.8 ) + 32
+}
 }
 
 
+
+// console.log(weather.getFahrenheit(25))
 
 /* 
   3. Ordre supérieur.
@@ -57,4 +72,15 @@ const travelers = [
 },
 ]
 
+function areFromNationality(arr, callback){
+  for( const value of arr){
+    if(!callback(value)){
+      return false ;
+    }
+  }
+  return true;
+}
 
+console.log(areFromNationality(travelers, travelers => travelers.nationality === "FR"))
+console.log(areFromNationality(travelers, travelers => travelers.nationality === "EN"))
+console.log(areFromNationality(travelers, travelers => travelers.nationality === "IT"))

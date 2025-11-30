@@ -15,6 +15,7 @@ function recursion(num) {
     }
     else {
       recursion(num)
+       console.log(num, "est inferieur au nombre demandé")
     }
 }
 recursion(0);
