@@ -53,7 +53,13 @@ const player3 = {
 
 
 function howGoodIsThatPlayer(player){
-
+  if(player.worldCup >= 1 && player.goldenBall > 1 && player.nationalCup > 2){
+    console.log("Niveau exceptionnel");
+  }else if(player.goldenBall >= 1 && player.nationalCup >= 1){
+    console.log("Bon niveau");
+  }else{
+    console.log("Niveau médiore");
+  }
 }
 howGoodIsThatPlayer(player1)
 howGoodIsThatPlayer(player2)
