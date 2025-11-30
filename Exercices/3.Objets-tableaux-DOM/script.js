@@ -3,6 +3,12 @@
     Ex: name, price, doors, kilometers, maxSpeed, year, etc ...
 */
 
+let car = {
+    name : "Oscar",
+    userName : "Prince",
+    age : 15,
+    country : "Ivoiry Cost"
+}
 
 /* 
     2. Vous disposez d'un tableau de fruits ci-dessous.
@@ -13,6 +19,9 @@
 
 const fruits = ["🍇","🍓","🍌"]
 
+console.log(fruits[2])
+console.log(fruits.length)
+console.log(fruits[fruits.length -1])
 
 /* 
     3. Loggez l'objet global BOM.

@@ -6,3 +6,11 @@
 
 */
 
+const title = document.querySelector("h1");
+
+title.addEventListener("click", handleClick);
+
+function handleClick(){
+    console.log("clicked !")
+     title.textContent = `${title.textContent + "a"}`
+}
