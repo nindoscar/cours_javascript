@@ -14,7 +14,13 @@ const person = {
   weight: 90
 }
 
-
+for(const personne in person){
+  // console.log(personne)
+  console.log(personne, person[personne])
+}
 
 const fruits = ["🍓","🍇","🍑","🍎","🥭"]
 
+for(const fruit in fruits){
+  console.log(fruits[fruit])
+}

@@ -18,7 +18,7 @@ const passenger2 = {
   premium: false
 }
 
-
+console.log(passenger2.premium == true ? "vrai" : "faux")
 
 
 

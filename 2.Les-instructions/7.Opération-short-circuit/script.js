@@ -13,3 +13,4 @@ const user = {
   name: "Hanz",
   level: 99
 }
+console.log(isAuthenticated && user)
