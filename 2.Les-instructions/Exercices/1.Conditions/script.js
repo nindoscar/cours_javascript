@@ -30,7 +30,7 @@ weatherFeeling(5)
   Enfin, si un joueur n'a pas assez de trophées pour apparaître dans les conditions ci-dessus, loggez "Niveau médiore".
 
   Testez votre fonction à l'aide des trois objets ci-dessous.
-*/
+*/ 
 
 const player1 = {
   name: "Paul",
