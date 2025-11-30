@@ -8,5 +8,8 @@
     else{} est utilisé à la fin d'une suite de conditions, lorsqu'on veut exécuter une instruction pour l'ensemble des conditions restantes.
 */
 
+let admin = "EMployer"
+
+
 
 

@@ -4,3 +4,25 @@
 
 const nb1 = 150;
 const nb2 = "150";
+
+const user1 = {
+    name : "Oscar",
+    admin : true,
+    age : 21,
+    position : "CEO"
+}
+const user2 = {
+    name : "Prince",
+    admin : false,
+    age : 51,
+    position : "Employer"
+}
+
+function checkPermission(user){
+    if( user.age >= 18 && user.admin && user.position === "CEO" || user.position === "employer"){
+        return "Welcom";
+    }else{
+        return "accès refusé";
+    }
+}
+console.log(checkPermission(user2))

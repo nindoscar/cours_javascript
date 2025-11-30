@@ -10,6 +10,9 @@
     Toutes les valeurs falsy : undefined, null, NaN, 0, "" (chaîne vide), false.
 */
 
-const nb1 = 200;
+const nb1 = 1200;
 const nb2 = 400;
 
+if(nb1 > nb2 ){
+    console.log("la condition est verifiée ")
+}
