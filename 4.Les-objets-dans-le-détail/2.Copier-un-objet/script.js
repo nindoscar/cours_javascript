@@ -21,7 +21,13 @@
 */
 
 
+const lettees = [1, 2, 3];
 
+const lettersCopy = [...lettees]
+
+lettees.push(5)
+console.log(lettersCopy)
+console.log(lettees)
 
 
 

@@ -9,3 +9,18 @@
     Il existe d'autres cas de figure dont nous parlerons plus tard.
 */
 
+const house = {
+    room : 5, 
+    area : 200,
+    district : 7,
+    priceWithoutTaxe : 850000,
+    getFullPrice(){
+        return this.priceWithoutTaxe * 1.2;
+    },
+    converstFtToSM : ()=>{
+        return this.area * 0.92;
+    }
+}
+
+console.log(house.getFullPrice());
+console.log(house.converstFtToSM())
