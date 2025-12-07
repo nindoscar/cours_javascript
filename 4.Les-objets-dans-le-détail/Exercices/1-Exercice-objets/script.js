@@ -35,4 +35,11 @@ const dam = {
   */
   
   const names = ["Jack", "Paul", "Lucas"];
+
+  const namesCopy = [...names]; 
+
+  names[2] = "Oscar";
+
+  console.log(names)
+  console.log(namesCopy)
   
