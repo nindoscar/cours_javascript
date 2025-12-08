@@ -11,3 +11,10 @@
 
 const couples = [["Tom","Lea"], ["Jack", "Sara"], ["Pedro", "Maria"]];
 
+ for(let i = 0; i < couples.length; i++){
+
+    for(let j = 0; j < couples[i].length; j++){
+        console.log(couples[i][j])
+
+    }
+ }
