@@ -115,3 +115,4 @@ const weights = [60,45,99,75,85,77,105];
         },
     ]
 
+console.log(users.find(oscar => oscar.id === 3))

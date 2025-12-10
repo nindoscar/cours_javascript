@@ -13,7 +13,9 @@
 
 const marks = [18,5,17,12,20,16,14]
 
+const sun = marks.reduce((acc, marks)=> acc + marks)
 
+console.log(sun)
 /* 
     2. Array.prototype.sort(callback(firstEl, secondEl))
 
@@ -39,9 +41,12 @@ const marks = [18,5,17,12,20,16,14]
 
 const letters = ["z","b","a","d","e"];
 
+letters.sort()
+console.log(letters)
 
 const numbers = [10,55,2,250,500,85]
-
+numbers.sort((a, b) => a - b)
+console.log(numbers)
 
 // On peut aussi trier des tableaux d'objets
 const store = [
@@ -59,3 +64,6 @@ const store = [
     },
 ]
 
+store.sort((a,b)=> a.price - b.price)
+
+console.log(store)

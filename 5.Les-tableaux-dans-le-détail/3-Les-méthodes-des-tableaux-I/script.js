@@ -12,6 +12,7 @@
 
     Découvrons ensemble les principales méthodes des tableaux.
 */
+ 
 
 /* 
     1. Array.prototype.forEach(callback(element, index, array))
@@ -28,7 +29,8 @@
 const numbers = [1,2,3,4,5,6]
 
 
-
+numbers.forEach((el, index) => numbers[index] = numbers[index] * 2  )
+console.log(numbers)
 
 /* 
     2. Array.prototype.map(callback(element, index, array))
@@ -55,7 +57,8 @@ const people = [
   }
 ]
 
-
+const names = people.map(people => people.name)
+console.log(names)
 /* 
     3. Array.prototype.filter(callback(el, index, array))
 
@@ -67,3 +70,6 @@ const people = [
 
 const heights = [170,185,198,162,187,155,178,207,201,189]
 
+const above = heights.filter(heights => heights > 180)
+
+console.log(above)
