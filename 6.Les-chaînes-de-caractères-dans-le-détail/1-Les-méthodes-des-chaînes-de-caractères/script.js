@@ -15,8 +15,14 @@
 */
 
 const str2 = "Le chat saute."
-
-
+console.log(str2);
+console.log(str2.length);
+console.log(str2[3])
+console.log(new String("lorem ipsum"))
+console.log(str2.includes("au"))
+console.log(str2.includes("atu"))
+console.log(str2.includes("au ip"))
+console.log(str2.includes("s a u ip"))
 
 /* 
     2. String.prototype.indexOf(index)
@@ -25,7 +31,7 @@ const str2 = "Le chat saute."
 */
 
 const str3 = "Le renard saute."
-
+console.log(str3.indexOf("r"))
 
 /* 
     3. String.prototype.slice([indexStart, indexEnd[)
