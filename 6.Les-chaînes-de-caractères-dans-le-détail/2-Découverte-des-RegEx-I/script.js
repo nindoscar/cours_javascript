@@ -15,6 +15,12 @@
     La seconde est plus populaire, mais ne peut utiliser d'expressions JS, donc à voir au cas par cas.
 */
 
+const regex = /ABC/
+
+console.log(regex.test("abc"));
+console.log(typeof regex)
+console.log(regex)
+console.dir(regex)
 
 /*    
     2. Les options (drapeaux).
