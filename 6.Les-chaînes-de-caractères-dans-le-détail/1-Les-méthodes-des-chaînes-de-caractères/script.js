@@ -54,7 +54,7 @@ const str4 = "L'éléphant boit."
 
 const str5 = "L'étudiant lit un livre."
 
-
+console.log(str5.toUpperCase())
 
 /* 
     5. String.prototype.trim()
