@@ -29,7 +29,8 @@ const text = "Je mange un osso buco à Milan."
 
     Détermine un intervalle d'occurrences possibles.
 */
-    // console.log("azzaa,aaaaaaaaaaaaaa")
+    console.log("azzaa,aaaaaaaaaaaaaa")
+    console.log("abc".match(/b(zb)?/))
 
 
 /* 
