@@ -19,11 +19,11 @@
    Le remplacement peut être globale ou unique, suivant le /g au niveau du regex.
 */
 
-   // console.log("Bo1nj1ou11r l1e m111onde") // Bonj1ou11r l1e m111onde
-   // console.log("Bo1nj1ou11r l1e m111onde") // Bonjour le monde 
-   // console.log("Bo1nj1ou11r l1e m111onde")  // Bonj1ou11r l1e m111onde
+   console.log("Bo1nj1ou11r l1e m111onde".replace(/1/,"")) // Bonj1ou11r l1e m111onde
+   console.log("Bo1nj1ou11r l1e m111onde".replace(/1/g,"")) // Bonjour le monde 
+   console.log("Bo1nj1ou11r l1e m111onde")  // Bonj1ou11r l1e m111onde
 
-   // console.log("J'adore les chiens") // "J'adore les chats"
+   console.log("J'adore les chiens".replace(/chiens/,"chats")) // "J'adore les chats"
 
 
 /* 
@@ -32,4 +32,4 @@
    Remplace toutes les occurences représentées par le premier argument par la chaîne fournie en second argument.
 */
 
-   // console.log("55-55-55-55-55") // '11-11-11-11-11'
+    console.log("55-55-55-55-55".replaceAll("55","11")) // '11-11-11-11-11'
