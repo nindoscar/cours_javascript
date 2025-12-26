@@ -18,3 +18,10 @@ const couples = [["Tom","Lea"], ["Jack", "Sara"], ["Pedro", "Maria"]];
 
     }
  }
+
+
+ for(const couple of couples ){
+    for(const names of couple){
+        console.log(names)
+    }
+ }
