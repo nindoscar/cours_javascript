@@ -19,7 +19,7 @@ const p = document.getElementById("subtitle")
     3. Loggez le texte du troisième <li> dans la console.
 */
 
-console.log(document.querySelector("ul li:nth-child(3)"))
+console.log(document.querySelector("ul li:nth-child(3)").textContent)
 
 
 /*  
@@ -27,8 +27,14 @@ console.log(document.querySelector("ul li:nth-child(3)"))
 */
 
 
+console.log(document.querySelector("img").getAttribute("src"))
+console.log(document.querySelector("img").src)
 
 
 /*
     5. Rajoutez un <li> contenant le texte "Nouveau LI !" à la liste. 
 */
+
+const li = document.createElement("li")
+li.textContent = "Nouveau li"
+document.querySelector("ul").appendChild(li)

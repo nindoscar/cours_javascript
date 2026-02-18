@@ -31,8 +31,23 @@ const data = [
     Ajoutez ensuite chaque <li> dans la liste <ul>
 */
 
+const ShopingList = document.querySelector("ul")
 
+function fillList(list, data){
+    data.forEach(obj => {
+        const li = document.createElement("li")
+        const liContent = `
+        <p></p>
+        <p></p>
+        `
+        li.innerHTML = liContent
+        li.querySelector("p:nth-child(1)").textContent = obj.content
+        li.querySelector("p:nth-child(2)").textContent = obj.category
+        list.appendChild(li)
+    });
+}
 
+fillList(ShopingList, data)
 /*
     2. Supprimez maintenant le premier et dernier élément de la liste.
 */
