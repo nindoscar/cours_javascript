@@ -9,8 +9,11 @@
 */
     
 const bnt = document.querySelector(".btn")
+const bnt2 = document.querySelector(".btn2")
 
 bnt.addEventListener("click", cliquer)
+bnt2.addEventListener("click", ()=> console.log("Hello Oscar NINDEBAHI"))
+
 
 function cliquer(){
     console.log("CLICKED")
