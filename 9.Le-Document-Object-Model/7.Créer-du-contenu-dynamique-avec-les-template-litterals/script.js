@@ -29,6 +29,7 @@
         content: `<img src='1' onerror='console.log("Code malicieux")'>`
       }]
 
+      
 
 /* 
       1. Attention, danger. 
