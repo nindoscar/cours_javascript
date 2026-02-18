@@ -8,7 +8,13 @@
     Elle permet d'être à l'écoute d'un évenement particulier sur un élément, c'est à dire de déclencher une fonction callback quand un évènement a été déclenché sur un élément.
 */
     
+const bnt = document.querySelector(".btn")
 
+bnt.addEventListener("click", cliquer)
+
+function cliquer(){
+    console.log("CLICKED")
+}
 
 /* 
     L'objet d'évènement.
