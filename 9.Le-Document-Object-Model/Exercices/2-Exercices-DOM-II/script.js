@@ -48,6 +48,10 @@ function fillList(list, data){
 }
 
 fillList(ShopingList, data)
+
 /*
     2. Supprimez maintenant le premier et dernier élément de la liste.
 */
+
+document.querySelector(".list li:firt-child").remove()
+document.querySelector(".list li:last-child").remove()
