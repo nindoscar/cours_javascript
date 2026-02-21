@@ -10,7 +10,9 @@ const lastname = document.querySelector(".lastname")
 form.addEventListener("submit", handleSubmit)
 
 function handleSubmit(e){
-   // e.preventDefault()
-    firstname.textContent = `Votre nom : ${inputs[0].value} `
-    lastname.textContent = `Votre prénoms: ${inputs[1].value} `
+    e.preventDefault()
+    lastname.textContent = `Votre prénomS: ${inputs[0].value} `
+    firstname.textContent = `Votre nom : ${inputs[1].value} `
+
+    form.reset()
 }
