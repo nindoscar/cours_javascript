@@ -12,3 +12,18 @@ body {
     margin: 0 auto;
     padding: 75px 10px 125px;
 }
+.hover-spoiler{
+    background-color: #111;
+    cursor: pointer;
+    color: transparent;
+}
+.hover-spoiler:hover{
+    background-color: transparent;
+    color: #111;
+    user-select: auto;
+}
+h1{
+    max-width: 900px;
+    margin-bottom: 35px;
+    font-size: 42px;
+}
