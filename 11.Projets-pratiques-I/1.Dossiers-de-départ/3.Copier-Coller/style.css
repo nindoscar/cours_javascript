@@ -17,5 +17,21 @@ margin: 0 auto;
 background-color: #f1f1f1;
 border-radius: 20px;
 padding: 34px 20px;
+position: relative;
+}
 
+.copy-clipboard-btn{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  font-size: 16px;
+  border: 6px 14px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.copy-clipboard-btn:hover{
+  background-color: #fff;
 }
