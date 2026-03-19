@@ -1,7 +1,9 @@
+
 const customMenu = document.querySelector(".custom-menu")
 const customMenuBtns = document.querySelectorAll(".custom-menu button")
 
 document.addEventListener("contextmenu", handleCustomContextMenu)
+//contextmenu = écoute l'evenement clique droit 
 
 function handleCustomContextMenu(e){
   e.preventDefault()
