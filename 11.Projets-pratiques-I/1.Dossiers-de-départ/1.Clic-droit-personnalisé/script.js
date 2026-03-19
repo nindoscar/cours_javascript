@@ -16,3 +16,9 @@ function handleDocumentClick(){
     customMenu.style.display = "none"
 }
 
+customMenuBtns.forEach(btn => btn.addEventListener("click", handleCustomMenuFeature))
+
+function handleCustomMenuFeature(e){
+  e.stopPropagation()
+  document.body.style.backgroundColor = `${e.target.dataset.color}`
+}
