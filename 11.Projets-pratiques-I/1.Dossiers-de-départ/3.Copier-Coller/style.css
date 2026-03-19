@@ -9,5 +9,13 @@
 body {
   font-family: Roboto, Helvetica, sans-serif;
   padding-top: 75px;
-  background-color: #f1f1f1;
+  background-color: #111;
+}
+.card {
+max-width: 325px;
+margin: 0 auto;
+background-color: #f1f1f1;
+border-radius: 20px;
+padding: 34px 20px;
+
 }
