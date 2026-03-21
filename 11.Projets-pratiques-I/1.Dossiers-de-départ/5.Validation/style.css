@@ -23,7 +23,7 @@ form{
   margin-bottom: 15px;
 }
 .input-group label {
-  font-style: 25px;
+  font-size: 25px;
   position: absolute;
   color: #333;
   cursor: pointer;
@@ -38,11 +38,33 @@ form{
   border: none;
   outline: none;
   border-radius: 10px;
-  font-style: 25px;
+  font-size: 25px;
+  cursor: pointer;
 }
-
+.validation{
+  color: red;
+  display: none;
+}
 /*Animation*/
 
-.input-group:focus-within label {
+.input-group:focus-within label,
+
+.input-group.filled-input label 
+{
   transform: translate(6px, -80px);
+}
+
+.input-group:focus-within .animated-input,
+
+.input-group.filled-input .animated-input 
+{
+  border: 1px solid #333;
+}
+
+.input-group .animated-input.error{
+  outline: 1px solid red;
+}
+
+.active{
+  display: block;
 }
