@@ -11,3 +11,38 @@ body {
   background: #f1f1f1;
   padding-top: 200px;
 }
+
+form{
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.input-group label {
+  font-style: 25px;
+  position: absolute;
+  color: #333;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(20px, -50%);
+  transition: transform 0.3s ease-out;
+}
+
+.animated-input{
+  width: 100%;
+  padding: 25px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-style: 25px;
+}
+
+/*Animation*/
+
+.input-group:focus-within label {
+  transform: translate(6px, -80px);
+}
